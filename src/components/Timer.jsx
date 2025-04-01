@@ -1,5 +1,5 @@
 // src/components/Timer.jsx
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useGame } from '../contexts/GameContext';
 
 const Timer = () => {

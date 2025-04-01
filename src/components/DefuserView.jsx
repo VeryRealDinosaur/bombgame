@@ -13,8 +13,8 @@ const DefuserView = () => {
     if (gameState.gameOver) {
         return (
             <div className="game-over">
-                <h2>{gameState.winner ? 'Bomb Defused!' : 'BOOM! Game Over'}</h2>
-                <p>Return to <a href="/">lobby</a> for a new game.</p>
+                <h2>{gameState.winner ? '¡Bomba Desactivada!' : '¡BOOM! Fin del Juego'}</h2>
+                <p>Volver al <a href="/">lobby</a> para un nuevo juego.</p>
             </div>
         );
     }
@@ -22,11 +22,11 @@ const DefuserView = () => {
     return (
         <div className="defuser-container">
             <div className="game-header">
-                <h2>Defuser View - Game {gameId}</h2>
+                <h2>Vista del Desactivador - Juego {gameId}</h2>
                 <div className="status-bar">
                     <Timer />
                     <div className="strikes">
-                        Strikes: {Array(gameState.strikes).fill('X').join('')}
+                        Errores: {Array(gameState.strikes).fill('X').join('')}
                     </div>
                 </div>
             </div>

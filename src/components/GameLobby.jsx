@@ -18,7 +18,7 @@ const GameLobby = () => {
     };
 
     if (!connectedToServer) {
-        return <div className="lobby">Connecting to server...</div>;
+        return <div className="lobby">Conectando al servidor...</div>;
     }
 
     return (
@@ -27,7 +27,7 @@ const GameLobby = () => {
             <form onSubmit={handleJoin}>
                 <div>
                     <label>
-                        Game ID:
+                        ID del Juego:
                         <input
                             type="text"
                             value={gameId}
@@ -38,15 +38,15 @@ const GameLobby = () => {
                 </div>
                 <div>
                     <label>
-                        Role:
+                        Rol:
                         <select value={role} onChange={(e) => setRole(e.target.value)} required>
-                            <option value="">Select a role</option>
-                            <option value="defuser">Defuser</option>
-                            <option value="manual">Manual Reader</option>
+                            <option value="">Selecciona un rol</option>
+                            <option value="defuser">Desactivador</option>
+                            <option value="manual">Lector del Manual</option>
                         </select>
                     </label>
                 </div>
-                <button type="submit">Join Game</button>
+                <button type="submit">Unirse al Juego</button>
             </form>
         </div>
     );

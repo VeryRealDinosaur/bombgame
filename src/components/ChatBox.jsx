@@ -40,9 +40,9 @@ const ChatBox = () => {
                     type="text"
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
-                    placeholder="Type your message..."
+                    placeholder="Escribe tu mensaje..."
                 />
-                <button type="submit">Send</button>
+                <button type="submit">Enviar</button>
             </form>
         </div>
     );
